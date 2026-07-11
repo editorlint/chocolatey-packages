@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Download the following:
    
-   x64: https://github.com/editorlint/editorlint/releases/download/0.3.0/editorlint_v0.3.0_windows_amd64.zip
+   x64: https://github.com/dobbo-ca/editorlint/releases/download/0.3.0/editorlint-0.3.0-windows-amd64.zip
    
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
@@ -17,7 +17,7 @@ Package can be verified like this:
 
 Using AU:
 
-   Get-RemoteChecksum https://github.com/editorlint/editorlint/releases/download/0.3.0/editorlint_v0.3.0_windows_amd64.zip
+   Get-RemoteChecksum https://github.com/dobbo-ca/editorlint/releases/download/0.3.0/editorlint-0.3.0-windows-amd64.zip
 
 File 'LICENSE.txt' is obtained from:
-   https://github.com/editorlint/editorlint/blob/main/LICENSE
+   https://github.com/dobbo-ca/editorlint/blob/main/LICENSE

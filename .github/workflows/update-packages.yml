@@ -45,7 +45,7 @@ jobs:
           $installContent = Get-Content $installPath -Raw
           $installContent = $installContent -replace '\$version = ''.*''', "`$version = '$VERSION'"
           $installContent = $installContent -replace 'https://github.com/[^/]*/editorlint/', "https://github.com/$ORGANIZATION/editorlint/"
-          $installContent = $installContent -replace 'download/[0-9.]*/editorlint_v[0-9.]*_windows_amd64\.zip', "download/$VERSION/editorlint_v${VERSION}_windows_amd64.zip"
+          $installContent = $installContent -replace 'download/[0-9.]*/editorlint-[0-9.]*-windows-amd64\.zip', "download/$VERSION/editorlint-${VERSION}-windows-amd64.zip"
           $installContent = $installContent -replace 'PLACEHOLDER_WINDOWS_AMD64_SHA256', $WINDOWS_AMD64_SHA256
           Set-Content $installPath $installContent
           
@@ -53,7 +53,7 @@ jobs:
           $verificationPath = "editorlint/legal/VERIFICATION.txt"
           $verificationContent = Get-Content $verificationPath -Raw
           $verificationContent = $verificationContent -replace 'https://github.com/[^/]*/editorlint/', "https://github.com/$ORGANIZATION/editorlint/"
-          $verificationContent = $verificationContent -replace 'download/[0-9.]*/editorlint_v[0-9.]*_windows_amd64\.zip', "download/$VERSION/editorlint_v${VERSION}_windows_amd64.zip"
+          $verificationContent = $verificationContent -replace 'download/[0-9.]*/editorlint-[0-9.]*-windows-amd64\.zip', "download/$VERSION/editorlint-${VERSION}-windows-amd64.zip"
           $verificationContent = $verificationContent -replace 'PLACEHOLDER_WINDOWS_AMD64_SHA256', $WINDOWS_AMD64_SHA256
           Set-Content $verificationPath $verificationContent
           
